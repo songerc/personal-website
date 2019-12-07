@@ -24,8 +24,10 @@ export const About = () => {
                 const Page = pages[item]
                 return <Page key={key} style={props}/>
             })}
-            <div style={{gridColumn: 5, gridRow: 2}}>
-                <button className="icon-switch" onClick={onClick}>></button>
+            <div style={{gridColumn: 5, gridRow: 2, cursor: 'pointer'}} onClick={onClick}>
+            <svg width="40" height="50" viewBox="0 0 42 53">
+              <path d="M0,0 l40,25 l-40,25" fill="none" stroke="black" stroke-width="3" />
+            </svg>
             </div>
             </div>
     )
